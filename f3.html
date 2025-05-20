@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PEDIDO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: white;
+    }
+
+    .btn-registrar {
+      background-color: #52013c;
+    }
+
+    .btn-registrar:active {
+      background-color: #d1068e;
+    }
+
+    .btn-nuevo {
+      background-color: #6e06a6;
+    }
+
+    .btn-nuevo:active {
+      background-color: #e60cd7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>PEDIDO</h2>
+    <form>
+       <label>Cliente (nombre):</label><br>
+      <input type="text" name="cliente"><br><br>
+
+      <label>Producto:</label><br>
+      <input type="text" name="producto"><br><br>
+
+      <label>Cantidad:</label><br>
+      <input type="number" name="cantidad" min="1"><br><br>
+
+      <label>Fecha de entrega:</label><br>
+      <input type="date" name="entrega"><br><br>
+
+      <label>Instrucciones especiales:</label><br>
+      <textarea name="instrucciones" rows="3" cols="30"></textarea><br><br>
+
+      <div class="buttons">
+        <button type="submit" class="btn-registrar">Registrar</button>
+        <button type="reset" class="btn-nuevo">Nuevo</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html> 

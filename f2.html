@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REGISTRO DE TRABAJADORES</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: white;
+    }
+
+    .btn-registrar {
+      background-color: #52013c;
+    }
+
+    .btn-registrar:active {
+      background-color: #d1068e;
+    }
+
+    .btn-nuevo {
+      background-color: #6e06a6;
+    }
+
+    .btn-nuevo:active {
+      background-color: #e60cd7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>REGISTRO DEL PRODUCTO</h2>
+    <form>
+      <label>numero de folio</label><br>
+      <input type="number" name="number"><br><br>
+
+      <label>color</label><br>
+      <input type="color" name="color"><br><br>
+
+      <label>nombre del producto</label><br>
+      <input type="tel" name="telefono"><br><br>
+
+      <label for="numero">precio</label><BR>
+      <input type="number" id="numero" name="numero"><BR><BR>
+
+     <label>disponibilidad:</label><BR>
+     <input type="radio" id="radio1" name="radio" value="opcion1"> DISPONIBLE
+     <input type="radio" id="radio2" name="radio" value="opcion2"> NO DISPONIBLE
+
+      <div class="buttons">
+        <button type="submit" class="btn-registrar">Registrar</button>
+        <button type="reset" class="btn-nuevo">cancelar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html> 
